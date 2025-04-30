@@ -29,10 +29,8 @@ const NavBar = () => {
   return (
     <div className="bg-transparent px-6 py-6 absolute top-0 w-full z-20">
       <div className="flex justify-between items-center text-white">
-        <div className="pl-5 md:pl-9">*Logo*</div>
-
-        {/* Desktop Nav */}
-        <div className="hidden md:flex text-[18px] items-center pr-5">
+        <div className="flex flex-row space-x-6">
+          <div className="pl-5 md:pl-9">*Logo*</div>
           <div
             onClick={() => navigate("/")}
             className={`px-4 hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
@@ -75,15 +73,21 @@ const NavBar = () => {
           >
             Get Quote
           </div>
+        </div>
 
-          <div className="text-center">
-            <button
-              onClick={() => navigate("/start-project")}
-              className="px-4 cursor-pointer bg-orange-400 text-[rgb(22,26,65)]  h-[40px] w-[150px] hover:border-2 hover:border-white"
-            >
-              Start Project
-            </button>
-          </div>
+        {/* Desktop Nav */}
+        <div className="hidden md:flex text-[18px] items-center pr-5">
+          <button
+            onClick={() => navigate("/start-project")}
+            className="px-4 cursor-pointer bg-orange-400 text-black  h-[40px] w-[200px] hover:bg-[rgb(235,117,27)]"
+          >
+            <img
+              src="./images/edit-symbol.png"
+              alt="edit-symbol"
+              className="w-4 h-4 inline"
+            />{" "}
+            Start Project
+          </button>
         </div>
 
         {/* Mobile Menu Button */}
