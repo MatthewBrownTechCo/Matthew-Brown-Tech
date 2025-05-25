@@ -11,7 +11,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Matthew Brown Tech",
   description:
-    "Matthew Brown Tech exists to help churches and small businesses have modern websites that communicate their vision clearly and effectively.",
+    "Matthew Brown Tech exists to help small businesses have modern websites that communicate their vision clearly and effectively.",
 };
 
 export default function RootLayout({

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import NavBar from "@/components/navbar";
 import { useRouter } from "next/navigation";
 
@@ -39,52 +40,61 @@ export default function Home() {
           {/* Service Block 1 */}
           <div className="md:flex-1 group relative">
             <div className="p-6 space-y-6 relative z-10">
-              <img
-                src="/images/landing-page-transparent.png"
-                alt="landing-page"
-                className="w-[20%] mx-auto"
-              />
+              <div className="relative w-[20%] mx-auto aspect-[1/1]">
+                <Image
+                  src="/images/landing-page-transparent.png"
+                  alt="landing-page"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 20vw, 20vw"
+                />
+              </div>
               <h3 className="text-3xl font-bold">Landing Page</h3>
               <p className="px-[20%]">
                 Professional, high-converting landing pages designed for
                 clarity, speed, and results
               </p>
             </div>
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-black group-hover:transition-all group-hover:duration-500 group-hover:clip-path-diagonal"></div>
           </div>
 
           {/* Service Block 2 */}
           <div className="md:flex-1 group relative">
             <div className="p-6 space-y-6 relative z-10">
-              <img
-                src="/images/multi-page-transparent.png"
-                alt="multi-page"
-                className="w-[20%] mx-auto"
-              />
+              <div className="relative w-[20%] mx-auto aspect-[1/1]">
+                <Image
+                  src="/images/multi-page-transparent.png"
+                  alt="multi-page-transparent-image"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 20vw, 20vw"
+                />
+              </div>
               <h3 className="text-3xl font-bold">Multi-Page Websites</h3>
               <p className="px-[15%]">
                 Multi-page websites built for seamless navigation, performance,
                 and long-term growth
               </p>
             </div>
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-black group-hover:transition-all group-hover:duration-500 group-hover:clip-path-diagonal"></div>
           </div>
 
           {/* Service Block 3 */}
           <div className="md:flex-1 group relative">
             <div className="p-6 space-y-6 relative z-10">
-              <img
-                src="/images/custom-gear-transparent.webp"
-                alt="custom-gear"
-                className="w-[20%] mx-auto"
-              />
+              <div className="relative w-[20%] mx-auto aspect-[1/1]">
+                <Image
+                  src="/images/custom-gear-transparent.png"
+                  alt="custom-gear"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 20vw, 20vw"
+                />
+              </div>
               <h3 className="text-3xl font-bold">Custom Design</h3>
               <p className="px-[20%]">
                 Unique, custom website designs that align perfectly with your
                 brand and goals
               </p>
             </div>
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-black group-hover:transition-all group-hover:duration-500 group-hover:clip-path-diagonal"></div>
           </div>
         </div>
 
@@ -92,18 +102,21 @@ export default function Home() {
           {/* Service Block 4 */}
           <div className="md:flex-1 group relative">
             <div className="p-6 space-y-6 relative z-10">
-              <img
-                src="/images/seo-transparent.png"
-                alt="seo"
-                className="w-[20%] mx-auto"
-              />
-              <h3 className="text-3xl font-bold">SEO Optimization</h3>
+              <div className="relative w-[20%] mx-auto aspect-[1/1]">
+                <Image
+                  src="/images/seo-transparent.png"
+                  alt="seo-transparent"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 20vw, 20vw"
+                />
+              </div>
+              <h3 className="text-3xl font-bold">SEO Integration</h3>
               <p className="px-[20%]">
                 Strategic SEO optimization to boost visibility, drive traffic,
                 and improve search rankings
               </p>
             </div>
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-black group-hover:transition-all group-hover:duration-500 group-hover:clip-path-diagonal"></div>
           </div>
 
           {/* Service Block 5 */}
@@ -120,7 +133,6 @@ export default function Home() {
                 and uncover growth opportunities
               </p>
             </div>
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-black group-hover:transition-all group-hover:duration-500 group-hover:clip-path-diagonal"></div>
           </div>
 
           {/* Service Block 6 */}
@@ -137,7 +149,6 @@ export default function Home() {
                 maintenance required
               </p>
             </div>
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-black group-hover:transition-all group-hover:duration-500 group-hover:clip-path-diagonal"></div>
           </div>
         </div>
       </div>
