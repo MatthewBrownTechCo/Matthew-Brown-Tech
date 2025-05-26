@@ -2,6 +2,7 @@
 import { useRouter, usePathname } from "next/navigation";
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import Logo from "./logo";
 
 const NavBar = () => {
   const router = useRouter();
@@ -22,64 +23,65 @@ const NavBar = () => {
       ? paths.includes(pathname)
       : pathname === paths;
     return isActive
-      ? "cursor-pointer hover:text-gray-200 underline underline-offset-8 md:underline-offset-4 decoration-orange-400"
+      ? "cursor-pointer hover:text-gray-200 underline underline-offset-8 md:underline-offset-4 decoration-[rgb(173,216,230)]"
       : "cursor-pointer hover:text-gray-200";
   };
 
   return (
     <div className="bg-transparent px-6 py-6 absolute top-0 w-full z-20">
       <div className="flex justify-between items-center text-white">
-        <div className="flex flex-row space-x-6">
-          <div className="pl-5 md:pl-9">*Logo*</div>
-          <div
-            onClick={() => navigate("/")}
-            className={`px-4 hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
-              "/"
-            )}`}
-          >
-            Home
-          </div>
-
-          <div className="relative group text-left">
+        <div className="flex items-center space-x-16 pl-5 md:pl-20">
+          <Logo />
+          <div className="flex items-center space-x-4">
             <div
-              onClick={() => navigate("/location")}
+              onClick={() => navigate("/")}
               className={`px-4 hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
-                [
-                  "/my-story",
-                  "/portfolio",
-                  "/affiliations",
-                  "/service-agreement",
-                ]
+                "/"
               )}`}
             >
-              About
+              Home
+            </div>
+
+            <div className="relative group text-left">
+              <div
+                onClick={() => navigate("/location")}
+                className={`px-4 hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
+                  [
+                    "/my-story",
+                    "/portfolio",
+                    "/affiliations",
+                    "/service-agreement",
+                  ]
+                )}`}
+              >
+                About
+              </div>
+            </div>
+
+            <div
+              onClick={() => navigate("/donate")}
+              className={`px-4 hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
+                "/donate"
+              )}`}
+            >
+              Donate
+            </div>
+
+            <div
+              onClick={() => navigate("/quote")}
+              className={`px-4 hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
+                "/quote"
+              )}`}
+            >
+              Get Quote
             </div>
           </div>
-
-          <div
-            onClick={() => navigate("/donate")}
-            className={`px-4 hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
-              "/donate"
-            )}`}
-          >
-            Donate
-          </div>
-
-          <div
-            onClick={() => navigate("/quote")}
-            className={`px-4 hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
-              "/quote"
-            )}`}
-          >
-            Get Quote
-          </div>
         </div>
-
         {/* Desktop Nav */}
         <div className="hidden md:flex text-[18px] items-center pr-5">
           <button
             onClick={() => navigate("/start-project")}
-            className="px-4 cursor-pointer bg-orange-400 text-black  h-[40px] w-[200px] hover:bg-[rgb(235,117,27)]"
+            className="px-4 cursor-pointer bg-[rgb(173,216,230)] hover:bg-[rgb(148,195,211)] text-black  h-[40px] w-[200px]"
           >
             <img
               src="./images/edit-symbol.png"
