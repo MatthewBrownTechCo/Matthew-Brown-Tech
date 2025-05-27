@@ -30,7 +30,7 @@ const NavBar = () => {
   return (
     <div className="bg-transparent px-6 py-6 absolute top-0 w-full z-20">
       <div className="flex justify-between items-center text-white">
-        <div className="flex items-center space-x-16 pl-5 md:pl-20">
+        <div className="flex items-center space-x-12 pl-5 md:pl-12">
           <Logo />
           <div className="flex items-center space-x-4">
             <div
@@ -44,17 +44,12 @@ const NavBar = () => {
 
             <div className="relative group text-left">
               <div
-                onClick={() => navigate("/location")}
+                onClick={() => navigate("/portfolio")}
                 className={`px-4 hover:cursor-pointer hover:text-gray-200 ${getLinkClass(
-                  [
-                    "/my-story",
-                    "/portfolio",
-                    "/affiliations",
-                    "/service-agreement",
-                  ]
+                  ["/portfolio", "/service-agreement"]
                 )}`}
               >
-                About
+                Portfolio
               </div>
             </div>
 
@@ -78,7 +73,7 @@ const NavBar = () => {
           </div>
         </div>
         {/* Desktop Nav */}
-        <div className="hidden md:flex text-[18px] items-center pr-5">
+        <div className="hidden md:flex text-[18px] items-center pr-5 md:pr-12">
           <button
             onClick={() => navigate("/start-project")}
             className="px-4 cursor-pointer bg-[rgb(173,216,230)] hover:bg-[rgb(148,195,211)] text-black  h-[40px] w-[200px]"

@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-[rgb(173,216,230)] py-8 text-center space-y-10 px-10">
+      <div className="bg-[rgb(173,216,230)] py-16 text-center space-y-10 px-10">
         <h2 className="text-6xl font-bold">Services</h2>
         <div className="md:flex">
           {/* Service Block 1 */}
@@ -169,7 +169,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <section className="flex md:my-10">
+
+      <section className="flex md:mt-16">
         <div className="relative w-[400px] h-[600px] flex-1 md:mx-10">
           <Image
             src="/images/matt-professional.jpg"
@@ -206,26 +207,98 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[rgb(22,26,65)] text-white space-y-6 flex flex-col items-center justify-center py-10 md:px-[15%]">
-        <div className="text-2xl font-bold">
-          Testimony from a satisfied customer
+      <section className="bg-[rgb(249,249,249)] text-black text-base rounded-xl shadow-md space-y-6 flex flex-col items-center justify-center py-10 my-16 px-8 md:mx-[10%]">
+        <div className="text-2xl font-semibold text-center text-[rgb(22,26,65)]">
+          What Others Are Saying
         </div>
-        <p className="">
-          "Our church previously used plug and play website templates, but we
-          weren't getting near the effectiveness and engagement we believed our
-          ministry needed. In short, we needed a site tailored to our church,
-          ministry, mission, and reach. Not only did Matthew Brown build the
-          website we needed from scratch, but he went far above anything we
-          asked for and built a beautifully designed, easy-to-use website that
-          already sees results byond expectation. In the modern eara, your
-          website is the way you will reach or deter people from your church or
-          business. I would recommend, and continue to recommend, Matthew Brown
-          to help you accomplish your mission!",
+        <p className="relative italic text-center max-w-3xl">
+          &quot;Our church previously used plug and play website templates, but
+          we weren't getting the effectiveness and engagement we believed our
+          ministry needed. Not only did Matthew Brown build the website we
+          needed from scratch, but he went far above anything we asked for. In
+          the modern era, your website is the way you will reach—or deter—people
+          from your church or business. I continue to recommend Matthew Brown to
+          help you accomplish your mission!&quot;
         </p>
-        <p>
-          <i>Submitted by Joshua, Pastor of Dream Church - Columbia, SC</i>
+        <p className="text-sm italic text-gray-600 text-center">
+          — Joshua, Pastor of Dream Church - Columbia, SC
         </p>
       </section>
+
+      <section className="bg-[rgb(173,216,230)] text-black py-16 px-[20%] space-y-8">
+        <h2 className="text-4xl font-bold text-center">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-6">
+          <div>
+            <h3 className="font-semibold">How long does a website take?</h3>
+            <p>
+              While this is near impossible to determine because it solely
+              depends on project complexity, a basic site with an average level
+              of complexity would take 1-2 weeks, though this is not guaranteed.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold">What tools do you use?</h3>
+            <p>
+              For fully custom sites, I build primarily with Next.js, but can
+              also use template based sites like Webflow, Squarespace, or
+              WordPress if preferred.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold">
+              Do you work with churches or nonprofit organizations?
+            </h3>
+            <p>
+              Yes. What sets Matthew Brown Tech apart is Matthew&apos;s decade
+              of firsthand ministry experience. He understands the unique needs,
+              language, and goals of churches and non-profits — and knows how to
+              structure websites that clearly communicate your vision, mission,
+              and core beliefs in a way that resonates with your audience.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold">Do you offer payment plans?</h3>
+            <p>
+              Yes. I typically require a 50% deposit up front, with the
+              remainder due upon completion. Custom payment plans are available
+              for larger projects.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold">
+              What if I already have a website? Can you improve or rebuild it?
+            </h3>
+            <p>
+              Absolutely. I offer site audits, redesigns, and rebuilds for
+              outdated or underperforming websites. We can keep what works and
+              improve what doesn&apos;t.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* <section className="text-center bg-[rgb(173,216,230)] space-y-10 py-10">
+        <div className="text-4xl font-bold">Affiliations</div>
+        <div className="space-y-3">
+          <p className="text-xl font-bold">CourseCareers</p>
+          <p>Get $50 off of your course using the button below!</p>
+          <a
+            href="https://coursecareers.com/a/Matthew?course=software-dev-fundamentals"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex justify-center items-center px-4 bg-white hover:bg-gray-100 text-white h-[60px] w-[300px] text-lg font-semibold rounded"
+          >
+            <Image
+              src="/images/coursecareers-button.webp"
+              alt="CourseCareers Logo"
+              width={270}
+              height={240}
+            />
+          </a>
+        </div>
+      </section> */}
     </>
   );
 }
