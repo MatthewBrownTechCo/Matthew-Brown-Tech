@@ -207,7 +207,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[rgb(249,249,249)] text-black text-base rounded-xl shadow-md space-y-6 flex flex-col items-center justify-center py-10 my-16 px-8 md:mx-[10%]">
+      <section className="bg-[rgb(249,249,249)] text-black text-base rounded-xl shadow-lg space-y-6 flex flex-col items-center justify-center py-10 my-16 px-8 md:mx-[10%]">
         <div className="text-2xl font-semibold text-center text-[rgb(22,26,65)]">
           What Others Are Saying
         </div>
